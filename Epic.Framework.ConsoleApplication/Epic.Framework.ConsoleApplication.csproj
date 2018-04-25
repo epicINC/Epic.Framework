@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C22F508F-9EE8-4178-8C1E-804DC5348522}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Epic.Framework.ConsoleApplication</RootNamespace>
+    <AssemblyName>Epic.Framework.ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExpressionTreeVisualizer">
+      <HintPath>..\..\..\..\ExpressionTreeVisualizer\ExpressionTreeVisualizer\bin\Debug\ExpressionTreeVisualizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.8.1\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.8.1\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AOP\AOPTest.cs" />
+    <Compile Include="AOP\DemoClass.cs" />
+    <Compile Include="AzDGXXTEATest.cs" />
+    <Compile Include="CodeTest.cs" />
+    <Compile Include="DataProviders\ProviderTest.cs" />
+    <Compile Include="DataProviders\TestDataProvider.cs" />
+    <Compile Include="EfficiencyTest.cs" />
+    <Compile Include="EmitRunSharp.cs" />
+    <Compile Include="EmitTest.cs" />
+    <Compile Include="Expression\SimpleFilterVisitor.cs" />
+    <Compile Include="JSONTest.cs" />
+    <Compile Include="OldDataProvider.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Product.designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RssItem.cs" />
+    <Compile Include="Expression\委托测试.cs" />
+    <Compile Include="动态类测试.cs" />
+    <Compile Include="新参数对象\NewParam.cs" />
+    <Compile Include="新参数对象\参数对象取值对比.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Epic.Framework.Data.Mongo.10gen\Epic.Framework.Data.Mongo.Gen10.csproj">
+      <Project>{43d54e89-1dc8-4dd7-861b-4b67aed3933f}</Project>
+      <Name>Epic.Framework.Data.Mongo.Gen10</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Epic.Framework.Data.Mongo.Samus\Epic.Framework.Data.Mongo.Samus.csproj">
+      <Project>{ad873c5d-c2d4-41ca-b61b-9b7a14153382}</Project>
+      <Name>Epic.Framework.Data.Mongo.Samus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Epic.Framework.Data.Mongo\Epic.Framework.Data.Mongo.csproj">
+      <Project>{63D800A9-9C8B-46AE-A46E-B4A850293CC9}</Project>
+      <Name>Epic.Framework.Data.Mongo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Epic.Framework.Data\Epic.Framework.Data.csproj">
+      <Project>{47901527-0974-4AB1-BF80-0D4155C7A6A6}</Project>
+      <Name>Epic.Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Epic.Framework.Testing\Epic.Framework.Testing.csproj">
+      <Project>{4E04D888-9394-4E48-B1E4-02CF26E18B1A}</Project>
+      <Name>Epic.Framework.Testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Epic.Framework\Epic.Framework.csproj">
+      <Project>{8dc2f5a4-a357-4c2b-8c3c-a8c170b48096}</Project>
+      <Name>Epic.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="connectionStrings.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

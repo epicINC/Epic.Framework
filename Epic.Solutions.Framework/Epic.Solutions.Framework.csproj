@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{112F942F-78B0-4286-BA70-BD52D53B9470}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Epic</RootNamespace>
+    <AssemblyName>Epic.Solutions.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AOP\IAspect.cs" />
+    <Compile Include="Caching\EpicCacheConfig.cs" />
+    <Compile Include="Caching\EpicCacheDictionary.cs" />
+    <Compile Include="Caching\EpicCacheScheduleWorker.cs" />
+    <Compile Include="Caching\EpicRuntimeCache.cs" />
+    <Compile Include="Caching\EpicCacheItem.cs" />
+    <Compile Include="Caching\IEpicCacheItem.cs" />
+    <Compile Include="Caching\Remoting\EpicCacheClient.cs" />
+    <Compile Include="Caching\Remoting\EpicCacheServer.cs" />
+    <Compile Include="Caching\WCF\EpicCacheServer.cs" />
+    <Compile Include="Caching\WCF\IEpicCacheServer.cs" />
+    <Compile Include="Collections\DynamicDataDictionary.cs" />
+    <Compile Include="Collections\DynamicDictionary.cs" />
+    <Compile Include="Components\Account\AccountBase.cs" />
+    <Compile Include="Components\Account\UserContactInformation.cs" />
+    <Compile Include="Components\Account\UserIMInformation.cs" />
+    <Compile Include="Components\Account\UserLocationInformation.cs" />
+    <Compile Include="Components\Account\UserPhoneInformation.cs" />
+    <Compile Include="Components\Account\UserStatisticsInformation.cs" />
+    <Compile Include="Components\Account\AccountCredentialType.cs" />
+    <Compile Include="Components\Account\AccountPasswordEncryptType.cs" />
+    <Compile Include="Components\CommonStatusType.cs" />
+    <Compile Include="Components\JsonObject.cs" />
+    <Compile Include="Components\LazyLoad.cs" />
+    <Compile Include="Components\Range.cs" />
+    <Compile Include="Components\RSS\RSSCategory.cs" />
+    <Compile Include="Components\RSS\RSSChannel.cs" />
+    <Compile Include="Components\RSS\RSSCloud.cs" />
+    <Compile Include="Components\RSS\RSSDcoument.cs" />
+    <Compile Include="Components\RSS\RSSEnclosure.cs" />
+    <Compile Include="Components\RSS\RSSImage.cs" />
+    <Compile Include="Components\RSS\RSSItem.cs" />
+    <Compile Include="Components\RSS\RSSSource.cs" />
+    <Compile Include="Components\RSS\RSSTextInput.cs" />
+    <Compile Include="Components\ServerInstance.cs" />
+    <Compile Include="Configuration\EpicSetting.cs" />
+    <Compile Include="Converter\ArrayConverter.cs" />
+    <Compile Include="Converter\CommonConverter.cs" />
+    <Compile Include="Converter\Converter.cs" />
+    <Compile Include="Collections\DataDictionary.cs" />
+    <Compile Include="Collections\DynamicFuncDataDictionary.cs" />
+    <Compile Include="Collections\DynamicEqualityComparer.cs" />
+    <Compile Include="Components\GenderType.cs" />
+    <Compile Include="Components\HorizontalDirectionType.cs" />
+    <Compile Include="Components\HumanSexType.cs" />
+    <Compile Include="Components\Account\IAccount.cs" />
+    <Compile Include="Components\SortDirectionType.cs" />
+    <Compile Include="Components\TupleHorizontal.cs" />
+    <Compile Include="Components\TupleVertical.cs" />
+    <Compile Include="Components\TupleSet.cs" />
+    <Compile Include="Components\VerticalDirectionType.cs" />
+    <Compile Include="Converter\ByteArrayConverter.cs" />
+    <Compile Include="Converter\DictionaryConverter.cs" />
+    <Compile Include="Converter\HexConverter.cs" />
+    <Compile Include="Converter\IEnumerableConverter.cs" />
+    <Compile Include="Converter\NameValueCollectionConverter.cs" />
+    <Compile Include="Converter\ObjectConverter.cs" />
+    <Compile Include="Converter\StringArrayConverter.cs" />
+    <Compile Include="Converter\StringConverter.cs" />
+    <Compile Include="Converter\XmlNodeConverter.cs" />
+    <Compile Include="Emit\Constructor\AssemblyConstructor.cs" />
+    <Compile Include="Emit\Constructor\BaseBuilderConstructor.cs" />
+    <Compile Include="Emit\Constructor\BaseConstructor.cs" />
+    <Compile Include="Emit\Constructor\CtorConstructor.cs" />
+    <Compile Include="Emit\Constructor\EmitConstructor.cs" />
+    <Compile Include="Emit\Constructor\EmitContext.cs" />
+    <Compile Include="Emit\Constructor\Extensions\EmitConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IAssemblyConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\ICtorConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IFieldConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IMethodConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IModuleConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IPropertyConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\ITypeChildConstructorExtensions.cs" />
+    <Compile Include="Emit\Define\Extensions\IConstructorDefineExtensions.cs" />
+    <Compile Include="Emit\Define\Extensions\ITypeDefineExtensions.cs" />
+    <Compile Include="Emit\Define\Infrastructure\IGenericAttributesDefine.cs" />
+    <Compile Include="Emit\Constructor\Extensions\ITypeConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\FieldConstructor.cs" />
+    <Compile Include="Emit\Constructor\MethodConstructor.cs" />
+    <Compile Include="Emit\Constructor\ModuleConstructor.cs" />
+    <Compile Include="Emit\Constructor\PropertyConstructor.cs" />
+    <Compile Include="Emit\SpeechTest.cs" />
+    <Compile Include="Emit\Constructor\TypeConstructor.cs" />
+    <Compile Include="Emit\Define\TypeDefine.cs" />
+    <Compile Include="Emit\Controller\BlankILGeneratorWrapper.cs" />
+    <Compile Include="Emit\Define\ConstructorDefine.cs" />
+    <Compile Include="Emit\Controller\IILGeneratorWrapper.cs" />
+    <Compile Include="Emit\Controller\ILGeneratorWrapper.cs" />
+    <Compile Include="Emit\DynamicMethodBuilder.cs" />
+    <Compile Include="Emit\EmitGenerator.cs" />
+    <Compile Include="Emit\FastPropertyAccessor.cs" />
+    <Compile Include="Emit\FastPropertyAccessorGeneric.cs" />
+    <Compile Include="Emit\SimpleEmitGenerator.cs" />
+    <Compile Include="Emit\TypeGenerator.cs" />
+    <Compile Include="Emit\TypesPool.cs" />
+    <Compile Include="Errors.cs" />
+    <Compile Include="Extensions\BooleanExtensions.cs" />
+    <Compile Include="Extensions\ByteArrayExtensions.cs" />
+    <Compile Include="Extensions\Data\SqlParameterExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\DynamicEqualityComparerLinqIntegration.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\EpicExtendExtensions.cs" />
+    <Compile Include="Extensions\ExtentExtensions.cs" />
+    <Compile Include="Extensions\FluentExtensions\FluentContainer.cs" />
+    <Compile Include="Extensions\FluentExtensions\FluentExtensions.cs" />
+    <Compile Include="Extensions\FluentExtensions\IListExtensions.cs" />
+    <Compile Include="Extensions\GenericExtensions.cs" />
+    <Compile Include="Extensions\HexExtensions.cs" />
+    <Compile Include="Extensions\ICollectionExtensions.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Extensions\IEqualityComparerFunc.cs" />
+    <Compile Include="Extensions\IListExtensions.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\Reflection\PropertyDescriptorExtensions.cs" />
+    <Compile Include="Extensions\Reflection\PropertyInfoExtensions.cs" />
+    <Compile Include="Extensions\StringConverterExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Extensions\ValidatorExtensions.cs" />
+    <Compile Include="Extensions\XmlNodeExtensions.cs" />
+    <Compile Include="FluentAPI\ExpressionExtensions.cs" />
+    <Compile Include="FluentAPI\ExpressionHelper.cs" />
+    <Compile Include="FluentAPI\PropertyPath.cs" />
+    <Compile Include="FluentAPI\SimpleAccessAPI.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="IO\TextFileReader.cs" />
+    <Compile Include="IO\TextFileWriter.cs" />
+    <Compile Include="Loggin.cs" />
+    <Compile Include="LogWriter.cs" />
+    <Compile Include="Mapper\FastMapper.cs" />
+    <Compile Include="Mapper\FastMapperManager.cs" />
+    <Compile Include="Mapper\IObjectMapper.cs" />
+    <Compile Include="Mapper\ObjectMapper.cs" />
+    <Compile Include="Net\NamedPipeMessageClient.cs" />
+    <Compile Include="Net\NamedPipeMessageServer.cs" />
+    <Compile Include="Net\IMessageClient.cs" />
+    <Compile Include="Net\IMessageServer.cs" />
+    <Compile Include="Net\UrlBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripting\DynamicJSON.cs" />
+    <Compile Include="Security\Encrypt.cs" />
+    <Compile Include="Security\Checksums\Adler32.cs" />
+    <Compile Include="Security\Checksums\CRC32.cs" />
+    <Compile Include="Security\Checksums\CRC32Helper.cs" />
+    <Compile Include="Security\Checksums\IChecksum.cs" />
+    <Compile Include="Security\Cryptography\AzDG.cs" />
+    <Compile Include="Security\Cryptography\CRC16.cs" />
+    <Compile Include="Security\Cryptography\CRC32.cs" />
+    <Compile Include="Security\Cryptography\CRC8.cs" />
+    <Compile Include="Security\Cryptography\Google.cs" />
+    <Compile Include="Security\Cryptography\XXTEA.cs" />
+    <Compile Include="Security\CryptographyUtility.cs" />
+    <Compile Include="Security\SaltUtility.cs" />
+    <Compile Include="Serialization\JsonFormatter.cs" />
+    <Compile Include="Testing\CountDown.cs" />
+    <Compile Include="Utility\CommonHelper.cs" />
+    <Compile Include="Utility\ConditionUtility.cs" />
+    <Compile Include="Utility\DateTimeUtility.cs" />
+    <Compile Include="Utility\Delegates\IDelegateConstraint.cs" />
+    <Compile Include="Utility\EnumUtility.cs" />
+    <Compile Include="Utility\Enums\EnumInternal.cs" />
+    <Compile Include="Utility\Enums\EnumOperation.cs" />
+    <Compile Include="Utility\Enums\IEnumConstraint.cs" />
+    <Compile Include="Utility\Enums\IEnumOperation.cs" />
+    <Compile Include="Utility\Int32Utility.cs" />
+    <Compile Include="Utility\JsonUtility.cs" />
+    <Compile Include="Utility\ReflectionUtility.cs" />
+    <Compile Include="Utility\RegexLib.cs" />
+    <Compile Include="Utility\StringUtility.cs" />
+    <Compile Include="Utility\ValidatorUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Epic.Solutions.Framework.nuspec" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Utility\Validator\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)"  "$(SolutionDir)Epic.Solutions.BuildProcessor\$(OutDir)"
+cd "$(SolutionDir)Epic.Solutions.BuildProcessor\$(OutDir)"
+Epic.Solutions.BuildProcessor.exe</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

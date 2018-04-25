@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Epic.NewParam.WebParamParseValidator&lt;T, K&gt;" Collapsed="true">
+    <Position X="9.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAABAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\WebParamParseValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.WebParamValidator&lt;T, K&gt;" Collapsed="true">
+    <Position X="7.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAABAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\WebParamValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.FuncContainer&lt;T, K&gt;" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAA=</HashCode>
+      <FileName>NewParam\FuncContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.RuleForExpression&lt;T, K&gt;" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NewParam\RuleForExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.TestParam" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAABCAAAAAA=</HashCode>
+      <FileName>NewParam\WebParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.WebParam&lt;T&gt;" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAAgAAgBAAAAAA=</HashCode>
+      <FileName>NewParam\WebParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.WebParamItem&lt;T, K&gt;" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIEACCCAABABAQAEAAEAQAQCCYAACIAIAAAhBAABAAQ=</HashCode>
+      <FileName>NewParam\WebParamItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Validators" />
+      <Property Name="Errors" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.NewParam.BaseWebParamValidator&lt;T, K&gt;" Collapsed="true">
+    <Position X="8.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\BaseWebParamValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Epic.NewParam.IWebParamItem" Collapsed="true">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAQAAAAAAAAIAAAgBAABAAQ=</HashCode>
+      <FileName>NewParam\IWebParamItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.NewParam.IWebParamValidator" Collapsed="true">
+    <Position X="13.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\IWebParamValidator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Epic.NewParam.WebParamValidatorNodeType" Collapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEggAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\WebParamValidatorNodeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.NewParam.WebParamState" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAIAIAAABAAAAAAAAAAAgAAIAAI=</HashCode>
+      <FileName>NewParam\WebParamState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

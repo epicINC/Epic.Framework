@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DC2F5A4-A357-4C2B-8C3C-A8C170B48096}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Epic</RootNamespace>
+    <AssemblyName>Epic.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/Epic.Framework v4/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Web 测试|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Web 测试\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Epic.Framework v4.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AOP\FuncInterceptor.cs" />
+    <Compile Include="AOP\IInterceptor.cs" />
+    <Compile Include="AOP\InterceptorFactory.cs" />
+    <Compile Include="AOP\ObjectInterceptor.cs" />
+    <Compile Include="AOP\ObjectInterceptorTargetType.cs" />
+    <Compile Include="AOP\ProxyBuilder.cs" />
+    <Compile Include="Business\BaseBusiness.cs" />
+    <Compile Include="Business\BusinessContainer.cs" />
+    <Compile Include="Business\IBusiness.cs" />
+    <Compile Include="ClassHelper.cs" />
+    <Compile Include="Components\BaseComponent.cs" />
+    <Compile Include="Components\Cacheable.cs" />
+    <Compile Include="Components\IComponent.cs" />
+    <Compile Include="Components\IDataComponent.cs" />
+    <Compile Include="Components\TupleHorizontal.cs" />
+    <Compile Include="Emit\Constructor\Extensions\EmitConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IAssemblyConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\ICtorConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IFieldConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IMethodConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IModuleConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\IPropertyConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Extensions\ITypeConstructorExtension.cs" />
+    <Compile Include="Emit\Constructor\Infrastructure\IConstructor.cs" />
+    <Compile Include="Emit\Constructor\Infrastructure\ICtorConstructor.cs" />
+    <Compile Include="Emit\Constructor\Infrastructure\IEmitContext.cs" />
+    <Compile Include="Emit\Constructor\Infrastructure\IFieldConstructor.cs" />
+    <Compile Include="Emit\Constructor\Infrastructure\IMethodConstructor.cs" />
+    <Compile Include="Emit\Constructor\Infrastructure\IModuleConstructor.cs" />
+    <Compile Include="Emit\Constructor\Infrastructure\IAssemblyConstructor.cs" />
+    <Compile Include="Emit\Constructor\Infrastructure\IPropertyConstructor.cs" />
+    <Compile Include="Emit\Constructor\Infrastructure\ITypeConstructor.cs" />
+    <Compile Include="Emit\Constructor\PropertyConstructor.cs" />
+    <Compile Include="Emit\Constructor\SpeechTest.cs" />
+    <Compile Include="Emit\ILDisassembler.cs" />
+    <Compile Include="FluentAPI\SimpleAccessAPI.cs" />
+    <Compile Include="NewParam\BaseWebParamItem.cs" />
+    <Compile Include="NewParam\DefaultParseFunc.cs" />
+    <Compile Include="NewParam\DefaultParser\ArrayStringParserExtensions.cs" />
+    <Compile Include="NewParam\DefaultParser\DateTimeParserExtensions.cs" />
+    <Compile Include="NewParam\DefaultParser\NumberParserExtensions.cs" />
+    <Compile Include="NewParam\FuncContainer.cs" />
+    <Compile Include="NewParam\IWebParamItem.cs" />
+    <Compile Include="NewParam\Rules\Expressions\ActionExpression.cs" />
+    <Compile Include="NewParam\Rules\Expressions\FuncExpression.cs" />
+    <Compile Include="NewParam\Rules\Expressions\ParamBinaryExpression.cs" />
+    <Compile Include="NewParam\Rules\Expressions\ParamExpression.cs" />
+    <Compile Include="NewParam\Rules\Expressions\ParseExpression.cs" />
+    <Compile Include="NewParam\Rules\Expressions\RequiredExpression.cs" />
+    <Compile Include="NewParam\Rules\Expressions\ValidExpression.cs" />
+    <Compile Include="NewParam\Rules\RuleForExpression.cs" />
+    <Compile Include="NewParam\Rules\Extensions\DataTimeExtensions.cs" />
+    <Compile Include="NewParam\Rules\Extensions.cs" />
+    <Compile Include="NewParam\Rules\Extensions\NumberExtensions.cs" />
+    <Compile Include="NewParam\Rules\Extensions\StringExtensions.cs" />
+    <Compile Include="NewParam\Validators\BaseWebParamValidator.cs" />
+    <Compile Include="NewParam\Validators\IWebParamValidator.cs" />
+    <Compile Include="NewParam\Validators\WebParamValidatorNodeType.cs" />
+    <Compile Include="NewParam\WebParam.cs" />
+    <Compile Include="NewParam\WebParamArrayItem.cs" />
+    <Compile Include="NewParam\WebParamCache.cs" />
+    <Compile Include="NewParam\WebParamManualArrayItem.cs" />
+    <Compile Include="NewParam\WebParamManualItem.cs" />
+    <Compile Include="NewParam\WebParamState.cs" />
+    <Compile Include="NewParam\Validators\WebParamValidator.cs" />
+    <Compile Include="NewParam\WebParamItem.cs" />
+    <Compile Include="NewParam\WebParamValidResult.cs" />
+    <Compile Include="Paging\OffsetPaging.cs" />
+    <Compile Include="Components\SimpleConfig.cs" />
+    <Compile Include="Components\SortDirection.cs" />
+    <Compile Include="Components\TupleWrapper.cs" />
+    <Compile Include="Configuration\EpicSettings.cs" />
+    <Compile Include="Configuration\KeyValueConfigurationCollection.cs" />
+    <Compile Include="Configuration\KeyValueConfigurationElement.cs" />
+    <Compile Include="TypeConverter\ArrayConverter.cs" />
+    <Compile Include="TypeConverter\EnumConverter.cs" />
+    <Compile Include="TypeConverter\StringArrayConverter.cs" />
+    <Compile Include="TypeConverter\StringConverter.cs" />
+    <Compile Include="TypeConverter\TConverter.cs" />
+    <Compile Include="Data\Common\ExpressionExtensionMethods.cs" />
+    <Compile Include="Data\DataList.cs" />
+    <Compile Include="Data\DataProviderBase.cs" />
+    <Compile Include="Data\DataUtil.cs" />
+    <Compile Include="Data\DbTypeConverter\DbTypeToCLR.cs" />
+    <Compile Include="Data\DefaultSqlDataProvider.cs" />
+    <Compile Include="Data\DefaultSqlDataProviderHelper.cs" />
+    <Compile Include="Data\DynamicDataHelper.cs" />
+    <Compile Include="Data\Emit\Common.cs" />
+    <Compile Include="Data\Emit\DynamicMappingSpike.cs" />
+    <Compile Include="Emit\Constructor\AssemblyConstructor.cs" />
+    <Compile Include="Emit\Constructor\BaseConstructor.cs" />
+    <Compile Include="Emit\Constructor\CtorConstructor.cs" />
+    <Compile Include="Emit\Constructor\EmitConstructor.cs" />
+    <Compile Include="Emit\Constructor\FieldConstructor.cs" />
+    <Compile Include="Emit\Constructor\EmitContext.cs" />
+    <Compile Include="Emit\Constructor\MethodConstructor.cs" />
+    <Compile Include="Emit\Constructor\ModuleConstructor.cs" />
+    <Compile Include="Emit\Constructor\TypeConstructor.cs" />
+    <Compile Include="Emit\Controller\IILGeneratorWrapper.cs" />
+    <Compile Include="Emit\Controller\BlankILGeneratorWrapper.cs" />
+    <Compile Include="Emit\Controller\ILGeneratorWrapper.cs" />
+    <Compile Include="Emit\DynamicMethodBuilder.cs" />
+    <Compile Include="Emit\EmitGenerator.cs" />
+    <Compile Include="Data\Emit\EmitDataCommon.cs" />
+    <Compile Include="Data\Emit\EmitDelete.cs" />
+    <Compile Include="Data\Emit\EmitReader.cs" />
+    <Compile Include="Data\Emit\EmitInsert.cs" />
+    <Compile Include="Data\Emit\EmitUpdate.cs" />
+    <Compile Include="Data\Expressions\OrderExpression.cs" />
+    <Compile Include="Data\Modes\ModeBuilder.cs" />
+    <Compile Include="Data\V2\DynamicObjectParameterDictionary.cs" />
+    <Compile Include="Data\V2\IObjectQuery.cs" />
+    <Compile Include="Data\V2\ObjectDataProvider.cs" />
+    <Compile Include="Data\Objects\EntityUtil.cs" />
+    <Compile Include="Data\Objects\Expressions\MSSqlExpressionVisitor.cs" />
+    <Compile Include="Data\Objects\Expressions\DbCommandBuilder.cs" />
+    <Compile Include="Data\Objects\Expressions\SqlExpressionVisitor.cs" />
+    <Compile Include="Data\Objects\IObjectSet.cs" />
+    <Compile Include="Data\Objects\Linq\EntityExpressionVisitor.cs" />
+    <Compile Include="Data\Objects\Linq\Error.cs" />
+    <Compile Include="Data\Objects\Linq\ReadOnlyCollectionExtensions.cs" />
+    <Compile Include="Data\Objects\SimpleEnumerator.cs" />
+    <Compile Include="Data\Objects\ObjectQuery.cs" />
+    <Compile Include="Data\Objects\ObjectQueryExecutionPlan.cs" />
+    <Compile Include="Data\Objects\ObjectQueryProvider.cs" />
+    <Compile Include="Data\Objects\ObjectQueryState.cs" />
+    <Compile Include="Data\Objects\ObjectResult.cs" />
+    <Compile Include="Data\Objects\ObjectSet.cs" />
+    <Compile Include="Data\Objects\ObjectContext.cs" />
+    <Compile Include="Data\Objects\TypeSystem.cs" />
+    <Compile Include="Data\Pagings\BasePaging.cs" />
+    <Compile Include="Data\Pagings\Paging.cs" />
+    <Compile Include="Data\Pagings\PagingFilter.cs" />
+    <Compile Include="Data\Pagings\PagingOrder.cs" />
+    <Compile Include="Data\Expressions\ConditionBuilder.cs" />
+    <Compile Include="Data\Expressions\ExpressionVisitor.cs" />
+    <Compile Include="Data\Expressions\PartialEvaluator.cs" />
+    <Compile Include="Data\Expressions\ExpressionHelper.cs" />
+    <Compile Include="Data\Expressions\SelectorArgs.cs" />
+    <Compile Include="Data\Expressions\SimpleExpressionVisitor.cs" />
+    <Compile Include="Data\Pagings\PagingParam.cs" />
+    <Compile Include="Data\ParameterList.cs" />
+    <Compile Include="Data\Schema\ColumnAttribute.cs" />
+    <Compile Include="Data\Schema\ColumnSchema.cs" />
+    <Compile Include="Data\Schema\DatabaseSchema.cs" />
+    <Compile Include="Data\Schema\PrimaryKeyColumnAttribute.cs" />
+    <Compile Include="Data\Schema\SchemaUtility.cs" />
+    <Compile Include="Data\Schema\TableSchema.cs" />
+    <Compile Include="Data\Schema\TableSchemaAttribute.cs" />
+    <Compile Include="Data\V2\ObjectEnumerator.cs" />
+    <Compile Include="Data\V2\ObjectParameter.cs" />
+    <Compile Include="Data\V2\ObjectParameterDictionary.cs" />
+    <Compile Include="Data\V2\ObjectQuery.cs" />
+    <Compile Include="Data\V2\ObjectQueryBuilder.cs" />
+    <Compile Include="Data\V2\ObjectQueryExtension.cs" />
+    <Compile Include="Data\V2\ObjectQueryParamExtension.cs" />
+    <Compile Include="Data\V2\Pagings\PagedList.cs" />
+    <Compile Include="Data\V2\QueryType.cs" />
+    <Compile Include="Data\V2\TSQLBuilder\ITSQLBuilder.cs" />
+    <Compile Include="Emit\ILGeneratorExtension.cs" />
+    <Compile Include="Emit\MethodBuilder.cs" />
+    <Compile Include="Emit\RunSharp\AccessAttributes.cs" />
+    <Compile Include="Emit\RunSharp\ClassGenerator.cs" />
+    <Compile Include="Emit\RunSharp\FieldGenerator.cs" />
+    <Compile Include="Emit\RunSharp\IContext.cs" />
+    <Compile Include="Emit\RunSharp\IMethodAttributes.cs" />
+    <Compile Include="Emit\RunSharp\ITypeAttributes.cs" />
+    <Compile Include="Emit\RunSharp\RunSharpContext.cs" />
+    <Compile Include="Emit\RunSharp\TypeAttributesGenerator.cs" />
+    <Compile Include="Emit\RunSharp\TypeGenerator.cs" />
+    <Compile Include="Emit\SimpleEmitGenerator.cs" />
+    <Compile Include="Emit\TypesPool.cs" />
+    <Compile Include="Extensions\Expressions\ExpressionExtensions.cs" />
+    <Compile Include="FluentAPI\ExpressionExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\PropertyInfoExtensions.cs" />
+    <Compile Include="FluentAPI\PropertyPath.cs" />
+    <Compile Include="Paging\PagingFilter.cs" />
+    <Compile Include="Paging\SimpleExpressionVisitor.cs" />
+    <Compile Include="Paging\MongoExpressionVisitor.cs" />
+    <Compile Include="Properties\Res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Exception\BaseException.cs" />
+    <Compile Include="Exception\ErrorException.cs" />
+    <Compile Include="Extensions\ArrayExtensions.cs" />
+    <Compile Include="Extensions\ByteArrayExtensions.cs" />
+    <Compile Include="Extensions\ConvertExtensions.cs" />
+    <Compile Include="Extensions\ConvertHelper.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\DynamicEqualityComparer.cs" />
+    <Compile Include="Extensions\DynamicEqualityComparerLinqIntegration.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Extensions\IntArrayExtensions.cs" />
+    <Compile Include="Extensions\IntExtensions.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\SizeExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="Extensions\StringArrayExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Extensions\Vaildate.cs" />
+    <Compile Include="Input\Mouse.cs" />
+    <Compile Include="Input\MouseMessage.cs" />
+    <Compile Include="Input\VirtualMouse.cs" />
+    <Compile Include="IO\FileExtensions.cs" />
+    <Compile Include="Mapper\IObjectMapper.cs" />
+    <Compile Include="Mapper\ObjectMapper.cs" />
+    <Compile Include="Mime\MediaType.cs" />
+    <Compile Include="Net\DiskFileUpload.cs" />
+    <Compile Include="Net\DownloadHeader.cs" />
+    <Compile Include="Net\FileItem.cs" />
+    <Compile Include="Net\FileItemWriter.cs" />
+    <Compile Include="Net\HttpWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Checksums\Adler32.cs" />
+    <Compile Include="Security\Checksums\CRC32.cs" />
+    <Compile Include="Security\Checksums\CRC32Helper.cs" />
+    <Compile Include="Security\Checksums\IChecksum.cs" />
+    <Compile Include="Security\Cryptography\AzDG.cs" />
+    <Compile Include="Security\Cryptography\CRC16.cs" />
+    <Compile Include="Security\Cryptography\CRC32.cs" />
+    <Compile Include="Security\Cryptography\CRC8.cs" />
+    <Compile Include="Security\Cryptography\Google.cs" />
+    <Compile Include="Security\Cryptography\XXTEA.cs" />
+    <Compile Include="Security\OAuthBase.cs" />
+    <Compile Include="Security\Utility.cs" />
+    <Compile Include="Serialization\JsonFormatter.cs" />
+    <Compile Include="SR.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="Strings.cs" />
+    <Compile Include="Utility\Delegate.cs" />
+    <Compile Include="Utility\IOUtility.cs" />
+    <Compile Include="Utility\ISBNUtility.cs" />
+    <Compile Include="Utility\RegexLib.cs" />
+    <Compile Include="Utility\StringUtil.cs" />
+    <Compile Include="Utility\ValidatorLibrary.cs" />
+    <Compile Include="Utility\Validator\IntExtensions.cs" />
+    <Compile Include="Utility\Validator\SimpleExpression.cs" />
+    <Compile Include="Utility\Validator\StringExtensions.cs" />
+    <Compile Include="Utility\Validator\Validator.cs" />
+    <Compile Include="Utility\Validator\ValidatorExtensions.cs" />
+    <Compile Include="Utility\WebUtility.cs" />
+    <Compile Include="Web\ContextCache.cs" />
+    <Compile Include="Web\Param\Expressions\ActionExpression.cs" />
+    <Compile Include="Web\Param\Expressions\FuncExpression.cs" />
+    <Compile Include="Web\Param\Expressions\ParamBinaryExpression.cs" />
+    <Compile Include="Web\Param\Expressions\ParamExpression.cs" />
+    <Compile Include="Web\Param\Expressions\ParseExpression.cs" />
+    <Compile Include="Web\Param\Expressions\RangeExpression.cs" />
+    <Compile Include="Web\Param\Expressions\ValidatorExpression.cs" />
+    <Compile Include="Web\Param\Extensions\HttpParamExtensions.cs" />
+    <Compile Include="Web\Param\HttpParam.cs" />
+    <Compile Include="Web\Param\TypeHelper\ArrayParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\BoolParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\ByteParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\CharParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\DateTimeParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\DecimalParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\DoubleParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\EnumParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\FloatParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\GuidParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\IntParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\LongParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\ShortParamHelper.cs" />
+    <Compile Include="Web\Param\TypeHelper\StringParamHelper.cs" />
+    <Compile Include="Web\ServerContext.cs" />
+    <Compile Include="Windows\API.cs" />
+    <Compile Include="Windows\User32.cs" />
+    <Compile Include="Windows\WinWindow.cs" />
+    <Compile Include="Xml\IXmlConvertible.cs" />
+    <Compile Include="Xml\XmlConvertibleWriter.cs" />
+    <Compile Include="Xml\XmlMarkupBuilder.cs" />
+    <Compile Include="Xml\XmlWriterExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Mongo\" />
+    <Folder Include="Data\OrderExpressions\" />
+    <Folder Include="Expression\" />
+    <Folder Include="Xsl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="NewParam\WebParam 设计.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Epic.AOP.ProxyBuilder" Collapsed="true">
+    <Position X="18" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>AOP\ProxyBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Business.BaseBusiness&lt;T, D&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAMAAAAAAAAAAAAgAAABAAAEIQAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Business\BaseBusiness.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Business.BusinessContainer&lt;T&gt;" Collapsed="true">
+    <Position X="35.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAABAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\BusinessContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.ClassHelper" Collapsed="true">
+    <Position X="23.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.TupleWrapper&lt;T&gt;" Collapsed="true">
+    <Position X="25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\TupleWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.TupleWrapper&lt;T1, T2&gt;" Collapsed="true">
+    <Position X="30.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\TupleWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.TupleWrapper&lt;T1, T2, T3&gt;" Collapsed="true">
+    <Position X="26.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\TupleWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.TupleWrapper&lt;T1, T2, T3, T4&gt;" Collapsed="true">
+    <Position X="28.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\TupleWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Error" Collapsed="true">
+    <Position X="30.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAABAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Error.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.SR" Collapsed="true">
+    <Position X="25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Strings" Collapsed="true">
+    <Position X="35.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Strings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Components.BaseComponent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\BaseComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Components.Cacheable&lt;T&gt;" Collapsed="true">
+    <Position X="40.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAoAAAAAAACgAAAICgAACChAAAAAAABAAAAIBAAAA=</HashCode>
+      <FileName>Components\Cacheable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Components.SimpleConfigExtension" Collapsed="true">
+    <Position X="37.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\SimpleConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Components.TupleHorizontal&lt;T1, T2&gt;" Collapsed="true">
+    <Position X="23.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>Components\TupleHorizontal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Configuration.EpicSettings" Collapsed="true">
+    <Position X="26.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAACAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\EpicSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Configuration.KeyValueConfigurationCollection" Collapsed="true">
+    <Position X="35.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAEQAACAAABAAAAAABAAAAAAAAAABCAAA=</HashCode>
+      <FileName>Configuration\KeyValueConfigurationCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Configuration.KeyValueConfigurationElement" Collapsed="true">
+    <Position X="37.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAQAAAAAIAAQAAAAAAAAAAAAgAAACAAA=</HashCode>
+      <FileName>Configuration\KeyValueConfigurationElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Converter.TConverter" Collapsed="true">
+    <Position X="19.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converter\TConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.ExpressionExtensionMethods" Collapsed="true">
+    <Position X="32" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABACA=</HashCode>
+      <FileName>Data\Common\ExpressionExtensionMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.DataList&lt;T&gt;" Collapsed="true">
+    <Position X="23.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\DataList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.DataProviderBase" Collapsed="true">
+    <Position X="25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Data\DataProviderBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.DataUtil" Collapsed="true">
+    <Position X="26.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Data\DataUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.DbTypeConverter" Collapsed="true">
+    <Position X="33.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAgABAAIAAQAAAA=</HashCode>
+      <FileName>Data\DbTypeConverter\DbTypeToCLR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.DefaultSqlDataProvider" Collapsed="true">
+    <Position X="37.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACkAIBAIEQIAAYEIEABAAAAAAAJADAAIIABAEI=</HashCode>
+      <FileName>Data\DefaultSqlDataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.DefaultSqlDataProviderHelper" Collapsed="true">
+    <Position X="39" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Data\DefaultSqlDataProviderHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.DynamicDataHelper" Collapsed="true">
+    <Position X="23.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\DynamicDataHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.UtilityHelper" Collapsed="true">
+    <Position X="23.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Data\DynamicDataHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.ModeBuilder" Collapsed="true">
+    <Position X="21.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Modes\ModeBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.EntiyMode&lt;T&gt;" Collapsed="true">
+    <Position X="21.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Modes\ModeBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.BasePaging" Collapsed="true">
+    <Position X="0.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAmAAEIJAAACACBAAEAAUCBIAEAAAAAAAAgAlABKgFA=</HashCode>
+      <FileName>Data\Pagings\BasePaging.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Paging&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAAAAgABAAAAAABAAAACAAAAEAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Data\Pagings\Paging.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.PagingFilter&lt;T&gt;" Collapsed="true">
+    <Position X="32" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAABAAAAQAAAIAEAAAABAAgAAgAAIAAAAAACA=</HashCode>
+      <FileName>Data\Pagings\PagingFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.PagingOrder" Collapsed="true">
+    <Position X="35.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAEAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Pagings\PagingOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.PagingParam" Collapsed="true">
+    <Position X="12.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIoAAAAAAAAAAAAACEAAAACEAAAABAAAAAAAkAAAAEA=</HashCode>
+      <FileName>Data\Pagings\PagingParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.ParameterList" Collapsed="true">
+    <Position X="37.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAABEAAA=</HashCode>
+      <FileName>Data\ParameterList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Emit.Common" Collapsed="true">
+    <Position X="28.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Data\Emit\Common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Emit.EmitDataCommon" Collapsed="true">
+    <Position X="35.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEgAAAAAAAIAAAAAAACAAAAAAAgAA=</HashCode>
+      <FileName>Data\Emit\EmitDataCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Emit.EmitDelete&lt;T&gt;" Collapsed="true">
+    <Position X="37.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Data\Emit\EmitDelete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Emit.EmitInsert&lt;T&gt;" Collapsed="true">
+    <Position X="39" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Data\Emit\EmitInsert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Emit.EmitReader" Collapsed="true">
+    <Position X="40.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQAAAgICgAABAAAAAgBAIAAAIEAAQQIBQAAAAAJEI=</HashCode>
+      <FileName>Data\Emit\EmitReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Emit.EmitUpdate&lt;T&gt;" Collapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAEAAAAAAAAAACAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Data\Emit\EmitUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamicMappingSpike.GenericReader" Collapsed="true">
+    <Position X="28.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAgAEAAAABAIAAAAAAAAAgAAAAQAAA=</HashCode>
+      <FileName>Data\Emit\DynamicMappingSpike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamicMappingSpike.ReaderNameAttribute" Collapsed="true">
+    <Position X="19.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Emit\DynamicMappingSpike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Expressions.ConditionBuilder" Collapsed="true">
+    <Position X="0.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAADgAACAAAAAEQQAgBAAgAAAIBAAAAgAAAA=</HashCode>
+      <FileName>Data\Expressions\ConditionBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Expressions.InnerExpressionHelper" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAACAAAAAAAAAAAAAACAAAAAgAAgAAAAAAAA=</HashCode>
+      <FileName>Data\Expressions\ExpressionHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Expressions.ExpressionVisitor" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAABACAAAYwBAQAAAAAISDAAAAEAgACAFAAAAgEQAA=</HashCode>
+      <FileName>Data\Expressions\ExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Expressions.PartialEvaluator" Collapsed="true">
+    <Position X="3" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAIAAAAAQEAAAAAgAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Expressions\PartialEvaluator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Expressions.SelectorArgs" Collapsed="true">
+    <Position X="32" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAQAEAAA=</HashCode>
+      <FileName>Data\Expressions\SelectorArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Expressions.SimpleExpressionVisitor" Collapsed="true">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAACgAAAAAAAAASAAgAAggAAAIBAAAAkAAAA=</HashCode>
+      <FileName>Data\Expressions\SimpleExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.EntityUtil" Collapsed="true">
+    <Position X="19.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Objects\EntityUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.IObjectSetEX" Collapsed="true">
+    <Position X="26.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Objects\IObjectSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.ExpressionVisitor" Collapsed="true">
+    <Position X="35.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAABACAAAYwBAQAAAAAISDAAAAEAgACAFAAAAgEQAA=</HashCode>
+      <FileName>Data\Objects\Linq\EntityExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.Error" Collapsed="true">
+    <Position X="28.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Objects\Linq\Error.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.ReadOnlyCollectionExtensions" Collapsed="true">
+    <Position X="21.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Objects\Linq\ReadOnlyCollectionExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.ObjectContext" Collapsed="true">
+    <Position X="28.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAkCAAABAAAAAAAAAAAgACAAABIAAAA=</HashCode>
+      <FileName>Data\Objects\ObjectContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.ObjectQuery" Collapsed="true">
+    <Position X="5.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQBAAAAgAEAAAACAAgAAAAAAAAAAAUAAAAgAAAAAA=</HashCode>
+      <FileName>Data\Objects\ObjectQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epic.Data.Objects.ObjectQuery&lt;T&gt;" Collapsed="true">
+    <Position X="5.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQAAAAAAAAAAAACAAgAAAAAAEAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Data\Objects\ObjectQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epic.Data.Objects.ObjectQueryExecutionPlan" Collapsed="true">
+    <Position X="19.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Data\Objects\ObjectQueryExecutionPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.ObjectQueryProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAQAAAAAAAAAQCAAAAAIAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Data\Objects\ObjectQueryProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Data.Objects.ObjectQueryState" Collapsed="true">
+    <Position X="26.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBABAAAQAAAABAAAAAAiAABAIAAAAAAAABgAAEAA=</HashCode>
+      <FileName>Data\Objects\ObjectQueryState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.ObjectResult" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAAAAAACAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Objects\ObjectResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epic.Data.Objects.ObjectResult&lt;T&gt;" Collapsed="true">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBAAAAKAAABAACAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Data\Objects\ObjectResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epic.Data.Objects.ObjectSet&lt;T&gt;" Collapsed="true">
+    <Position X="5.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Objects\ObjectSet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epic.Data.Objects.SimpleEnumerator&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAAACAAAAAgAAAAAAAIAAAAAAQAAA=</HashCode>
+      <FileName>Data\Objects\SimpleEnumerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Data.Objects.TypeSystem" Collapsed="true">
+    <Position X="18" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAQAAA=</HashCode>
+      <FileName>Data\Objects\TypeSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.Expressions.DbCommandBuilder" Collapsed="true">
+    <Position X="32" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAQAAAACAQAAADASCUAAAEICAgCBIAhQCGIiQg=</HashCode>
+      <FileName>Data\Objects\Expressions\DbCommandBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.Expressions.MSSqlExpressionVisitor" Collapsed="true">
+    <Position X="7.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAQAAAAAIgAAAABAAAAgAAAA=</HashCode>
+      <FileName>Data\Objects\Expressions\MSSqlExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.Expressions.SqlExpressionVisitorEX" Collapsed="true">
+    <Position X="23.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Objects\Expressions\SqlExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Objects.Expressions.SqlExpressionVisitor" Collapsed="true">
+    <Position X="21.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAIAAAAQAAAgAIQAAAAAIgAAAABAAAAgAQAA=</HashCode>
+      <FileName>Data\Objects\Expressions\SqlExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Schema.ColumnSchemaAttribute" Collapsed="true">
+    <Position X="14.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACQAABgAACAAAAAAAAAAIAA=</HashCode>
+      <FileName>Data\Schema\ColumnAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Schema.ColumnSchema" Collapsed="true">
+    <Position X="26.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAAAiAgAAAAABAAAQAABgIACAIAQAAAQCAgAA=</HashCode>
+      <FileName>Data\Schema\ColumnSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Schema.DatabaseSchemaAttribute" Collapsed="true">
+    <Position X="21.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Schema\DatabaseSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Schema.PrimaryKeyColumnAttribute" Collapsed="true">
+    <Position X="14.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Schema\PrimaryKeyColumnAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Schema.SchemaUtility" Collapsed="true">
+    <Position X="30.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Schema\SchemaUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Schema.TableSchema" Collapsed="true">
+    <Position X="40.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIFAAgCAACQEgABFAAAAAAIKAAiCCAA=</HashCode>
+      <FileName>Data\Schema\TableSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Schema.TableSchema&lt;T&gt;" Collapsed="true">
+    <Position X="39" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIkAAgCAACQGAABFQAAAAAIKAAiDCAA=</HashCode>
+      <FileName>Data\Schema\TableSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.Schema.TableSchemaAttribute" Collapsed="true">
+    <Position X="18" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Data\Schema\TableSchemaAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.V2.DynamicObjectParameterDictionary" Collapsed="true">
+    <Position X="28.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABIAACAAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>Data\V2\DynamicObjectParameterDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.V2.ObjectDataProvider&lt;T&gt;" Collapsed="true">
+    <Position X="30.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAEAAACQAAAwAAAElAESAAAEAAAAhACAACBAAgAA=</HashCode>
+      <FileName>Data\V2\ObjectDataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.V2.ObjectEnumerator&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAAACAAAAAAAAAAAACIAAAAAAQAAA=</HashCode>
+      <FileName>Data\V2\ObjectEnumerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Data.V2.ObjectParameter" Collapsed="true">
+    <Position X="37.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAwAAAAAgAAoIAAAKCAAAAAIAAAADAAAAAgAAAAIAA=</HashCode>
+      <FileName>Data\V2\ObjectParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.V2.ObjectParameterDictionary" Collapsed="true">
+    <Position X="39" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAIAAAAAAAAABACQAAAAAAAABAAAA=</HashCode>
+      <FileName>Data\V2\ObjectParameterDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.V2.ObjectQuery&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAA4ABIAGABSAAAAABAgAAAAIAAAUAAAABAAAAAA=</HashCode>
+      <FileName>Data\V2\ObjectQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Data.V2.ObjectQueryBuilder&lt;T&gt;" Collapsed="true">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAABAAAAAQiCQEDABAAyQAQBEAgwAyAIATAACAECA=</HashCode>
+      <FileName>Data\V2\ObjectQueryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.V2.ObjectQueryExtension" Collapsed="true">
+    <Position X="21.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAAAAAAAAAAAAAAAAAAASAAQEAAAAgAAEAAAAAEAA=</HashCode>
+      <FileName>Data\V2\ObjectQueryExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.V2.ObjectQueryParamExtension" Collapsed="true">
+    <Position X="23.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Data\V2\ObjectQueryParamExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Data.V2.Pagings.PageList&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Data\V2\Pagings\PagedList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Emit.AssemblyConstructor" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\AssemblyConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.AssemblyConstructorExtension" Collapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\AssemblyConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.BaseConstructor" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\BaseConstructor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epic.Emit.CtorConstructor" Collapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\CtorConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.CtorConstructorExtension" Collapsed="true">
+    <Position X="19.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\CtorConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.EmitConstructor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\EmitConstructor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Emit.EmitConstructorExtension" Collapsed="true">
+    <Position X="32" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\EmitConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.EmitContext" Collapsed="true">
+    <Position X="33.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAgAAQAAAAAAIAAAQAACAAAgAA=</HashCode>
+      <FileName>Emit\Constructor\EmitContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.FieldConstructor" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\FieldConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.FieldConstructorExtension" Collapsed="true">
+    <Position X="37.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\FieldConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.MethodConstructor" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\MethodConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.MethodConstructorExtension" Collapsed="true">
+    <Position X="19.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\MethodConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.ModuleConstructor" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\ModuleConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.ModuleConstructorExtension" Collapsed="true">
+    <Position X="23.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Emit\Constructor\ModuleConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.TypeConstructor" Collapsed="true">
+    <Position X="12.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\TypeConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.TypeConstructorExtension" Collapsed="true">
+    <Position X="33.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\TypeConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.BlankILGeneratorWrapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAAAAAAAgAAAAAABhQBCAAIAAAQAAEAAIUAAAAJA=</HashCode>
+      <FileName>Emit\Controller\BlankILGeneratorWrapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Emit.ILGeneratorWrapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAAAAAAAgAAAAAABhQBCAAIAAAQAAEAAIUIAAAJA=</HashCode>
+      <FileName>Emit\Controller\ILGeneratorWrapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Emit.DynamicMethodBuilder" Collapsed="true">
+    <Position X="0.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\DynamicMethodBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.EmitGenerator" Collapsed="true">
+    <Position X="3" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gkAAQQQAAABAAhMKEAANTBAAICIIAABASABAgIgIAAE=</HashCode>
+      <FileName>Emit\EmitGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.ILGeneratorExtension" Collapsed="true">
+    <Position X="37.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gkAAQAQAAABAAgMKEAANSBAAICIIAAAACABAgAgIAAE=</HashCode>
+      <FileName>Emit\ILGeneratorExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.MethodBuilder1" Collapsed="true">
+    <Position X="3" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABCAAAAAABAAAgAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\MethodBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.SimpleEmitGenerator" Collapsed="true">
+    <Position X="5.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\SimpleEmitGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.TypesPool" Collapsed="true">
+    <Position X="40.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAACAAA=</HashCode>
+      <FileName>Emit\TypesPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.RunSharp.ClassGenerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\RunSharp\ClassGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Emit.RunSharp.FieldGenerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAgAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\RunSharp\FieldGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Emit.RunSharp.FieldGeneratorExtensions" Collapsed="true">
+    <Position X="40.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\RunSharp\FieldGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.RunSharp.IMethodAttributesExtensions" Collapsed="true">
+    <Position X="40.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABQABAEAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAQAA=</HashCode>
+      <FileName>Emit\RunSharp\IMethodAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.RunSharp.ITypeAttributesExtensions" Collapsed="true">
+    <Position X="32" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAABAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAASAA=</HashCode>
+      <FileName>Emit\RunSharp\ITypeAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.RunSharp.RunSharpContext" Collapsed="true">
+    <Position X="28.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Emit\RunSharp\RunSharpContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.RunSharp.TypeAttributesGenerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\RunSharp\TypeAttributesGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Emit.RunSharp.TypeGenerator" Collapsed="true">
+    <Position X="37.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAABAgAAAAQAAAIARAwQEAAAAAAEAAAAAAAASAA=</HashCode>
+      <FileName>Emit\RunSharp\TypeGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Emit.RunSharp.TypeGeneratorExtensions" Collapsed="true">
+    <Position X="39" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Emit\RunSharp\TypeGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.LXTVote.Exception.BaseException" Collapsed="true">
+    <Position X="14.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exception\BaseException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.LXTVote.Exception.ErrorException&lt;T&gt;" Collapsed="true">
+    <Position X="14.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exception\ErrorException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.ArrayExtensions" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\ArrayExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.ByteArrayExtensions" Collapsed="true">
+    <Position X="37.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\ByteArrayExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.ConvertExtensions" Collapsed="true">
+    <Position X="32" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\ConvertExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.ConvertHelper" Collapsed="true">
+    <Position X="33.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\ConvertHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.DateTimeExtensions" Collapsed="true">
+    <Position X="28.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\DateTimeExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.DictionaryExtensions" Collapsed="true">
+    <Position X="40.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\DictionaryExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.DynamicEqualityComparer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAKAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\DynamicEqualityComparer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Extensions.DynamicEqualityComparerLinqIntegration" Collapsed="true">
+    <Position X="26.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAQACAAAAAAEAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Extensions\DynamicEqualityComparerLinqIntegration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.EnumExtensions" Collapsed="true">
+    <Position X="23.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\EnumExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.IEnumerableExtensions" Collapsed="true">
+    <Position X="35.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAIAAAAAAAAAAAAAAAAgAAABQAAA=</HashCode>
+      <FileName>Extensions\IEnumerableExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.IntArrayExtensions" Collapsed="true">
+    <Position X="19.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\IntArrayExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.IntExtensions" Collapsed="true">
+    <Position X="23.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Extensions\IntExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.ListExtensions" Collapsed="true">
+    <Position X="39" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAABAAAIAAQAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Extensions\ListExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.ObjectExtensions" Collapsed="true">
+    <Position X="33.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\ObjectExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.PropertyInfoExtensions" Collapsed="true">
+    <Position X="39" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\PropertyInfoExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.SizeExtensions" Collapsed="true">
+    <Position X="19.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\SizeExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.StreamExtensions" Collapsed="true">
+    <Position X="26.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Extensions\StreamExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.StringArrayExtensions" Collapsed="true">
+    <Position X="28.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\StringArrayExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.StringExtensions" Collapsed="true">
+    <Position X="32" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACEAAAAAEQAgAEAAICgAAAEABQAACAQiAsAAAAYDAA=</HashCode>
+      <FileName>Extensions\StringExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.TypeExtensions" Collapsed="true">
+    <Position X="35.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\TypeExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.VaildateHelper" Collapsed="true">
+    <Position X="25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAIAAAAAAABAgAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Extensions\Vaildate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Framework.OAuthBase" Collapsed="true">
+    <Position X="26.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAAAAIRAAAAAAEAgABNARFAAAAEAEAAA1ACgwAAAA=</HashCode>
+      <FileName>Security\OAuthBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Extensions.Expressions.ExpressionExtensions" Collapsed="true">
+    <Position X="33.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\Expressions\ExpressionExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.FluentAPI.FluentAPIExtensions" Collapsed="true">
+    <Position X="25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAIAEAAAAAAABEAIAAAAAAAAAAAAAAAAAAIAAAg=</HashCode>
+      <FileName>FluentAPI\ExpressionExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.FluentAPI.PropertyPath" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEiAKAAQQAAAAAAIAEAAAAAAAAAiA=</HashCode>
+      <FileName>FluentAPI\PropertyPath.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Input.Mouse" Collapsed="true">
+    <Position X="11.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Input\Mouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Input.VirtualMouse" Collapsed="true">
+    <Position X="11.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAACAAAAAAAAAIAAIACAAKAAAAAAA=</HashCode>
+      <FileName>Input\VirtualMouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.IO.FileExtensions" Collapsed="true">
+    <Position X="18" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IO\FileExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Mapper.ObjectMapper&lt;Source, Dest&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mapper\ObjectMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Mime.MediaType" Collapsed="true">
+    <Position X="18" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAASAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Mime\MediaType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Net.DiskFileUpload" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAEAACACAIAAAgAAAAAAQAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Net\DiskFileUpload.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Net.DownloadHeader" Collapsed="true">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAgAAAAAEAAAAAAEEAAAggAAAAAIAAQAAAAAAAA=</HashCode>
+      <FileName>Net\DownloadHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Net.FileItem" Collapsed="true">
+    <Position X="19.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAACAAAAAAAAAAAAAAQAAACEACAAiAAgAAAABAA=</HashCode>
+      <FileName>Net\FileItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Net.FileItemWriter" Collapsed="true">
+    <Position X="21.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAEAABAAQAAAEAAAAAAQABAAEAIAAAACAQSAAmIJAI=</HashCode>
+      <FileName>Net\FileItemWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Net.HttpWebClient" Collapsed="true">
+    <Position X="33.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAIAABA=</HashCode>
+      <FileName>Net\HttpWebClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.FuncContainer&lt;T, K&gt;" Collapsed="true">
+    <Position X="26.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAA=</HashCode>
+      <FileName>NewParam\FuncContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.RuleForExpression&lt;T, K&gt;" Collapsed="true">
+    <Position X="26.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NewParam\RuleForExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.BaseWebParamValidator&lt;T, K&gt;" Collapsed="true">
+    <Position X="9.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\BaseWebParamValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epic.NewParam.WebParamParseValidator&lt;T, K&gt;" Collapsed="true">
+    <Position X="10.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAABAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\WebParamParseValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.WebParamValidator&lt;T, K&gt;" Collapsed="true">
+    <Position X="8.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAABAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\WebParamValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.TestParam" Collapsed="true">
+    <Position X="21.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAABCAAAAAA=</HashCode>
+      <FileName>NewParam\WebParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.WebParam&lt;T&gt;" Collapsed="true">
+    <Position X="32" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAAgAAgBAAAAAA=</HashCode>
+      <FileName>NewParam\WebParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.NewParam.WebParamItem&lt;T, K&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIEACCCAABABAQAEAAEAQAQCCYAACIAIAAAhBAABAAQ=</HashCode>
+      <FileName>NewParam\WebParamItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Paging.MongoExpressionVisitor" Collapsed="true">
+    <Position X="25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACIiAAAAiAAQEAAAAASAEgABAACAAABAAgAAAAIA=</HashCode>
+      <FileName>Paging\MongoExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Paging.OffsetPaging" Collapsed="true">
+    <Position X="28.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIGAAAAhAAAAAAAAAEAASAAAADAAAAAAAAAAEAAAgEA=</HashCode>
+      <FileName>Paging\OffsetPaging.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Paging.PagingFilter&lt;T, K&gt;" Collapsed="true">
+    <Position X="33.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Paging\PagingFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Paging.SimpleExpressionVisitor" Collapsed="true">
+    <Position X="18" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACIiAAAAiAAQEAAAAASAEgABgACAAABAAgACAAIA=</HashCode>
+      <FileName>Paging\SimpleExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Properties.Res" Collapsed="true">
+    <Position X="25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAABEAAAAQAAIAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Security.Checksums.Adler32" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAAAAAAAAEAAIAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Security\Checksums\Adler32.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Security.Checksums.CRC32" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAIAAABAAAAAAAAAAAAAIAAAAACAAgAAAAAAA=</HashCode>
+      <FileName>Security\Checksums\CRC32.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Security.Checksums.CRC32Helper" Collapsed="true">
+    <Position X="40.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAAA=</HashCode>
+      <FileName>Security\Checksums\CRC32Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Security.Cryptography.AzDG" Collapsed="true">
+    <Position X="26.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Security\Cryptography\AzDG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Security.Cryptography.CRC16" Collapsed="true">
+    <Position X="35.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAAEAAABCAQAAAAAAAAACIAQAAAAAAAAACgoAAAA=</HashCode>
+      <FileName>Security\Cryptography\CRC16.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Security.Cryptography.CRC32" Collapsed="true">
+    <Position X="37.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBgAAAAAABCAQAAAAAAAAACIAAAMAAAAAAAKgAAAAA=</HashCode>
+      <FileName>Security\Cryptography\CRC32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Security.Cryptography.CRC8" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAABAAAAAQgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Security\Cryptography\CRC8.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Security.Cryptography.CheckSum" Collapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAIAAAAARAAABAAAAAAAAAAAAAAQAAAAAAAAAEAA=</HashCode>
+      <FileName>Security\Cryptography\Google.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Security.Cryptography.XXTEA" Collapsed="true">
+    <Position X="21.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAQAIAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Security\Cryptography\XXTEA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Security.Utility" Collapsed="true">
+    <Position X="21.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IANAAAAAAAAAAAgAAAAAIQAAAAAIAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Security\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Serialization.JsonFormatter" Collapsed="true">
+    <Position X="33.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\JsonFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.IOUtility" Collapsed="true">
+    <Position X="28.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAiAAQA=</HashCode>
+      <FileName>Utility\IOUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.ISBNUtility" Collapsed="true">
+    <Position X="30.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAACAA=</HashCode>
+      <FileName>Utility\ISBNUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.RegexLib" Collapsed="true">
+    <Position X="23.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAEAAAAAEQAAAAAAAACAADAAAAAAAA=</HashCode>
+      <FileName>Utility\RegexLib.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.StringUtil" Collapsed="true">
+    <Position X="37.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Utility\StringUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.IntExtensions" Collapsed="true">
+    <Position X="21.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAiAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\Validator\IntExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.SimpleExpression" Collapsed="true">
+    <Position X="40.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\Validator\SimpleExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.StringExtensions" Collapsed="true">
+    <Position X="30.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAABAACAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\Validator\StringExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.Validator&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAICAACAAgBAAAAAQAAAAAACAAgQAABIAAAAQ=</HashCode>
+      <FileName>Utility\Validator\Validator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Epic.Utility.ValidatorExtensions" Collapsed="true">
+    <Position X="28.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\Validator\ValidatorExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.ValidatorLibrary" Collapsed="true">
+    <Position X="30.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCQAAAAAAAAAABAGAAAAAAAFAAAAAAAQAQAIAAABAAA=</HashCode>
+      <FileName>Utility\ValidatorLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Utility.WebUtility" Collapsed="true">
+    <Position X="35.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\WebUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.ContextCache" Collapsed="true">
+    <Position X="30.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\ContextCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.HttpParamExtensions" Collapsed="true">
+    <Position X="32" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAIAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\Extensions\HttpParamExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.HttpParam" Collapsed="true">
+    <Position X="8.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAACAAAAAAAAQAFAAEABAEAAAAlAAABAQ=</HashCode>
+      <FileName>Web\Param\HttpParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.HttpParam&lt;T&gt;" Collapsed="true">
+    <Position X="8.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAQAAAAACSAEgAAAAAAACBAAAKAAgQAgPEAAAiA=</HashCode>
+      <FileName>Web\Param\HttpParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.ArrayParamHelper" Collapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\ArrayParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.BoolParamHelper" Collapsed="true">
+    <Position X="33.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\BoolParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.ByteParamHelper" Collapsed="true">
+    <Position X="39" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAABAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\ByteParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.CharParamHelper" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\CharParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.DateTimeParamHelper" Collapsed="true">
+    <Position X="30.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\DateTimeParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.DecimalParamHelper" Collapsed="true">
+    <Position X="35.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\DecimalParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.DoubleParamHelper" Collapsed="true">
+    <Position X="19.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\DoubleParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.EnumParamHelper" Collapsed="true">
+    <Position X="25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\EnumParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.FloatParamHelper" Collapsed="true">
+    <Position X="23.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\FloatParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.GuidParamHelper" Collapsed="true">
+    <Position X="30.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\GuidParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.IntParamHelper" Collapsed="true">
+    <Position X="25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAABAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\IntParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.LongParamHelper" Collapsed="true">
+    <Position X="40.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAABAAgAAAEAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\LongParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.ShortParamHelper" Collapsed="true">
+    <Position X="35.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAABAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\TypeHelper\ShortParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.StringParamHelper" Collapsed="true">
+    <Position X="33.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIiAAAAABAACAgEEAAAAARgIAAAAAAAAQCBBgAAACA=</HashCode>
+      <FileName>Web\Param\TypeHelper\StringParamHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.ServerContext" Collapsed="true">
+    <Position X="33.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAA=</HashCode>
+      <FileName>Web\ServerContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.Expressions.ActionExpression&lt;T&gt;" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\Expressions\ActionExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.Expressions.FuncExpression&lt;T&gt;" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\Expressions\FuncExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.Expressions.ParamBinaryExpression&lt;T&gt;" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Web\Param\Expressions\ParamBinaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.Expressions.ParamExpression&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAQAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\Expressions\ParamExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.Expressions.ParseExpression&lt;T&gt;" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\Expressions\ParseExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.Expressions.RangeExpression&lt;T&gt;" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\Expressions\RangeExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Web.Expressions.ValidatorExpression&lt;T&gt;" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web\Param\Expressions\ValidatorExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Windows.API" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yIBBkOhOQiNIQtGgCgIYQKJMgkjUqYKyCG6CF51nN2Q=</HashCode>
+      <FileName>Windows\API.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Windows.User32" Collapsed="true">
+    <Position X="19.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAASAAAAAAAAAAIAAAAAAAAASgAAA=</HashCode>
+      <FileName>Windows\User32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Windows.ClassNames" Collapsed="true">
+    <Position X="25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Windows\WinWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Windows.WinWindow" Collapsed="true">
+    <Position X="37.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAABAAQCgAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Windows\WinWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Xml.XmlConvertibleBase" Collapsed="true">
+    <Position X="12.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Xml\IXmlConvertible.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Epic.Xml.XmlConvertibleExt" Collapsed="true">
+    <Position X="39" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Xml\IXmlConvertible.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Xml.XmlConvertibleWriter" Collapsed="true">
+    <Position X="40.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Xml\XmlConvertibleWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Xml.XmlMarkupBuilder" Collapsed="true">
+    <Position X="18" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Xml\XmlMarkupBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Epic.Xml.Extensions.XmlWriterExtension" Collapsed="true">
+    <Position X="19.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Xml\XmlWriterExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Epic.AOP.IInterceptor" Collapsed="true">
+    <Position X="28.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AOP\IInterceptor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Business.IBusiness&lt;T&gt;" Collapsed="true">
+    <Position X="18" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAMAAAAAAAAAAAAgAAAAAAAEIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\IBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Components.IComponent" Collapsed="true">
+    <Position X="21.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\IComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Components.IDataComponent" Collapsed="true">
+    <Position X="25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\IDataComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Components.ISimpleConfig" Collapsed="true">
+    <Position X="37.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\SimpleConfig.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Data.Objects.IObjectSet&lt;T&gt;" Collapsed="true">
+    <Position X="33.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Objects\IObjectSet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Data.V2.IObjectQuery&lt;T&gt;" Collapsed="true">
+    <Position X="32" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAIAEAASAAAAABAgAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Data\V2\IObjectQuery.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Data.V2.TSQLBuilder.ITSQLBuilder" Collapsed="true">
+    <Position X="39" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\V2\TSQLBuilder\ITSQLBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Emit.IConstructor" Collapsed="true">
+    <Position X="23.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\Constructor\EmitConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Emit.IILGeneratorWrapper" Collapsed="true">
+    <Position X="26.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAAAAAAAgAAAAAABhQBCAAIAAAQAAEAAIUAAAAJA=</HashCode>
+      <FileName>Emit\Controller\IILGeneratorWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Emit.RunSharp.IContext" Collapsed="true">
+    <Position X="1.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\RunSharp\IContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Emit.RunSharp.IMethodAttributes" Collapsed="true">
+    <Position X="0.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\RunSharp\IMethodAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Emit.RunSharp.ITypeAttributes" Collapsed="true">
+    <Position X="2.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emit\RunSharp\ITypeAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Mapper.IObjectMapper&lt;Source, Dest&gt;" Collapsed="true">
+    <Position X="30.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mapper\IObjectMapper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.NewParam.IWebParamItem" Collapsed="true">
+    <Position X="40.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAQAAAAAAAAIAAAgBAABAAQ=</HashCode>
+      <FileName>NewParam\IWebParamItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.NewParam.IWebParamValidator" Collapsed="true">
+    <Position X="18" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\IWebParamValidator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Paging.IPagingFilter&lt;T&gt;" Collapsed="true">
+    <Position X="35.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Paging\PagingFilter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Security.Checksums.IChecksum" Collapsed="true">
+    <Position X="19.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Security\Checksums\IChecksum.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Epic.Xml.IXmlConvertible" Collapsed="true">
+    <Position X="19.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Xml\IXmlConvertible.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Epic.Components.SortDirection" Collapsed="true">
+    <Position X="32" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAQAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Components\SortDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.Data.Schema.AutoSync" Collapsed="true">
+    <Position X="19.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAEAIAAAAAAAAAAAAAAgAAEAAAA=</HashCode>
+      <FileName>Data\Schema\ColumnAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.Data.V2.QueryFuncType" Collapsed="true">
+    <Position X="28.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAABAAIAAAEAAEAAQAAAAAAAAAAAAAYAAAAAQ=</HashCode>
+      <FileName>Data\V2\ObjectQueryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.Data.V2.QueryType" Collapsed="true">
+    <Position X="30.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Data\V2\QueryType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.Emit.RunSharp.AccessAttributes" Collapsed="true">
+    <Position X="18" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAA0ARAEAAAABAAIQAAAEEMVgAgoAHAEgUAAAARAA=</HashCode>
+      <FileName>Emit\RunSharp\AccessAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.Input.MouseMessage" Collapsed="true">
+    <Position X="25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAACAAAAAAAgCAAAAAAAAAAAAAAAAAAAAAAJEEIAQ=</HashCode>
+      <FileName>Input\MouseMessage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.NewParam.WebParamValidatorNodeType" Collapsed="true">
+    <Position X="37.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEggAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NewParam\Validators\WebParamValidatorNodeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.NewParam.WebParamState" Collapsed="true">
+    <Position X="35.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAIAIAAABAAAAAAAAAAAgAAIAAI=</HashCode>
+      <FileName>NewParam\WebParamState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.Security.Cryptography.CRC8_POLY" Collapsed="true">
+    <Position X="21.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAACABAA=</HashCode>
+      <FileName>Security\Cryptography\CRC8.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.Utility.ValidResultType" Collapsed="true">
+    <Position X="33.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAIAAAAAAAAAAAAAAAAAAIAAI=</HashCode>
+      <FileName>Utility\Validator\Validator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.Web.HttpParamStateType" Collapsed="true">
+    <Position X="23.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAIAIAAABAAAAAAAAAAAgAAIAAI=</HashCode>
+      <FileName>Web\Param\HttpParam.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Epic.Web.Expressions.ParamExpressionType" Collapsed="true">
+    <Position X="26.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAACAAAAAAAAAAACAAAAAAAgAAAAAEAAAA=</HashCode>
+      <FileName>Web\Param\Expressions\ParamExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Epic.ParseAction&lt;TInput, TOutput&gt;" Collapsed="true">
+    <Position X="19.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\Delegate.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="DynamicMappingSpike.SmartReader&lt;T&gt;" Collapsed="true">
+    <Position X="21.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Emit\DynamicMappingSpike.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Epic.Framework.ParseAction&lt;T, K&gt;" Collapsed="true">
+    <Position X="18" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\ConvertHelper.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
